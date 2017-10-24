@@ -22,15 +22,15 @@ public class MainActivity extends AppCompatActivity {
         listaDatos=(ListView)findViewById(R.id.lstDatos);
         lista=new ArrayList<Datos>();
 
-        lista.add(new Datos(1, "Gallina", "La más feliz del corral", R.drawable.animal1));
-        lista.add(new Datos(2, "Vaca", "Me da leche merengada...Ay, pero que salaa!!!", R.drawable.animal2));
-        lista.add(new Datos(3, "Perro", "chindawn, Manolito", R.drawable.animal3));
-        lista.add(new Datos(4, "Burro", "Pero que guapo eres!!", R.drawable.animal4));
-        lista.add(new Datos(5, "Pato", "Cuac, cuac...", R.drawable.animal5));
-        lista.add(new Datos(6, "Caballo", "Corre caballito, corre!!", R.drawable.animal6));
-        lista.add(new Datos(7, "Gallo", "Galliniiiita, galliniiiita", R.drawable.animal7));
-        lista.add(new Datos(8, "Oveja", "Mamá, que va pasar conmigo estas navidades?", R.drawable.animal8));
-        lista.add(new Datos(9, "Pavo", "Creo que lo que a mí", R.drawable.animal9));
+        lista.add(new Datos(1, "Gallina", "La más feliz del corral", R.drawable.animal1, R.raw.animal1));
+        lista.add(new Datos(2, "Vaca", "Me da leche merengada...Ay, pero que salaa!!!", R.drawable.animal2, R.raw.animal2));
+        lista.add(new Datos(3, "Perro", "chindawn, Manolito", R.drawable.animal3, R.raw.animal3));
+        lista.add(new Datos(4, "Burro", "Pero que guapo eres!!", R.drawable.animal4, R.raw.animal4));
+        lista.add(new Datos(5, "Pato", "Cuac, cuac...", R.drawable.animal5, R.raw.animal5));
+        lista.add(new Datos(6, "Caballo", "Corre caballito, corre!!", R.drawable.animal6, R.raw.animal6));
+        lista.add(new Datos(7, "Gallo", "Galliniiiita, galliniiiita", R.drawable.animal7, R.raw.animal7));
+        lista.add(new Datos(8, "Oveja", "Mamá, que va pasar conmigo estas navidades?", R.drawable.animal8, R.raw.animal8));
+        lista.add(new Datos(9, "Pavo", "Creo que lo que a mí", R.drawable.animal9, R.raw.animal9));
 
         Adaptador miAdaptador=new Adaptador(getApplicationContext(), lista);
 

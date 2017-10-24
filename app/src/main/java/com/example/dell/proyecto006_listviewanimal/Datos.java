@@ -11,12 +11,14 @@ public class Datos implements Serializable{
     private String titulo;
     private String detalle;
     private int imagen;
+    private int sonido;
 
-    public Datos(int id, String titulo, String detalle, int imagen) {
+    public Datos(int id, String titulo, String detalle, int imagen, int sonido) {
         this.id = id;
         this.titulo = titulo;
         this.detalle = detalle;
         this.imagen = imagen;
+        this.sonido = sonido;
     }
 
     public int getId() {
@@ -50,4 +52,8 @@ public class Datos implements Serializable{
     public void setImagen(int imagen) {
         this.imagen = imagen;
     }
+
+    public int getSonido() { return sonido;}
+
+    public void setSonido(int sonido) { this.sonido = sonido; }
 }
